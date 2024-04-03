@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=, initial-scale=1.0">
+     
+     <title>algo</title>
+
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               color: rgb(255, 255, 255);
+               font-family: SF Mono ;
+          }
+          
+          body{
+               height: 100%;
+               width: 100%;
+          }
+          .main{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
+          }
+          .array_container {
+               /* rotate: 180deg; */
+               display: flex;
+               justify-content: center;
+               align-items: flex-end;
+               width: 80vw;
+               height: 80vh;
+               margin: 20px auto;
+               /* height: 300px; Initial height */
+               /* border: 1px solid rgb(182, 167, 167); */
+          }
+          .bars{
+               width: 35px;
+               margin: 0 5px;
+               background-color: #323131;
+               border-radius: 2px;
+               /* border: 0; */
+               /* border: 1px solid black; */
+
+          }
+          
+          .btn{
+               width: 60%;
+               height: 10vh;
+               background-color: rgb(24, 21, 21);
+               display: flex;
+               align-items: center;
+               justify-content: space-around;
+               border-radius: 10px;
+          }
+          .btn button{
+               width: 8vw;
+               height: 3vw;
+               background-color: rgb(255, 49, 49);
+               border: 0;
+               border-radius: 5px;
+               font-size: 1vw;
+          }
+          .btn p{
+               text-align: center;
+               width: 8vw;
+               /* background-color: red; */
+          }
+     </style>
+
+
+</head>
+<body style="background-color: #e5e5e5;">
+     
+     <div class="main">
+          
+          <div class="array_container">
+               <!-- dynamic array taku ... -->
+               
+          </div>
+          <div class="btn">
+
+               <p  id="slider_value">Array Size: 1</p>
+               <input type="range" min="1" max="40" value="1" id="dynamicArraySizeInput">
+               <button class="btn" id="bubble">bubble</button>
+               <!-- <button class="btn" id="merge">merge</button> -->
+               <button class="btn" id="quick"> quickSort</button>
+               <button class="btn" id="selection">selection</button>
+               <button class="btn" id="insertion">insertion</button>
+
+
+          </div>
+     </div>
+
+   
+     <script src="bubble.js"></script>
+     <script src="quickSort.js"></script>
+     <!-- <script src="merge.js"></script> -->
+     <script src="selection.js"></script>
+     <script src="insertion.js"></script>
+</body>
+</html>
